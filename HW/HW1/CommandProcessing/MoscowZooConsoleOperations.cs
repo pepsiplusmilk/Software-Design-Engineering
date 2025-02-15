@@ -4,6 +4,7 @@ using MoscowZooERP.ThingsHierarchy;
 
 namespace MoscowZooERP.CommandProcessing;
 
+// Все возможные действия которые мы можем совершить в консоли
 public enum MoscowZooConsoleOperations {
   Help,
   Add,

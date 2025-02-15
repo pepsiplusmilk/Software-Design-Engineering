@@ -2,7 +2,12 @@ using System.Reflection;
 
 namespace MoscowZooERP.CommandProcessing;
 
+/// <summary>
+/// Класс который реализует проверку поступившей из консоли строки на то что она является командой
+/// </summary>
+/// <typeparam name="T"> Параметризованный тип перечисления </typeparam>
 public class Matcher<T> where T : System.Enum {
+  // Команды задаются 1 раз при создании, подразумевается что консоль стабильна
   private readonly List<ICommand<T>> _commands;
 
   public T Parse(string? text) {

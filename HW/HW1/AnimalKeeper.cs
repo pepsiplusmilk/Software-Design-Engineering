@@ -5,7 +5,7 @@ namespace MoscowZooERP;
 public class AnimalKeeper {
   protected List<Herbivore> HerbivoreAnimals = new List<Herbivore>();
   protected List<Predator> PredatorAnimals = new List<Predator>();
-
+  
   public IReadOnlyCollection<Herbivore> GetHerbivoresList() {
     return HerbivoreAnimals.AsReadOnly();
   }

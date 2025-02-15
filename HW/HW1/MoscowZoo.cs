@@ -35,9 +35,11 @@ public class MoscowZoo : AnimalKeeper, IAccounted {
     if (thing is null) {
       throw new ArgumentNullException("В грузовике не обнаружено вещей");
     }
-    
-    _things[thing.Id] = thing;
-    
+
+    if (!_things.TryAdd(thing.Id, thing)) {
+      throw new ArgumentException("Предмет с таким инвентарным номером уже существует.");
+    }
+
     return true;
   }
 

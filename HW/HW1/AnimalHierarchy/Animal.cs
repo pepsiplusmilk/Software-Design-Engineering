@@ -1,5 +1,8 @@
 namespace MoscowZooERP.AnimalHierarchy;
 
+/// <summary>
+/// Класс предоставляющий функционал живого существа
+/// </summary>
 public class Animal : ILiveCreature {
   protected int FoodRequierement;
   protected string? nickname;
@@ -22,6 +25,7 @@ public class Animal : ILiveCreature {
   }
 
   public string? Nickname {
+    // Если передана пустая строка или null строка то сохраняем как null
     set {
       if (value is null || value.Length == 0) {
         nickname = null;
@@ -30,6 +34,7 @@ public class Animal : ILiveCreature {
       nickname = value;
     }
 
+    // Далее проверяем что выражение null и если да возвращаем ""
     get => (nickname is null) ? "" : nickname;
   }
 

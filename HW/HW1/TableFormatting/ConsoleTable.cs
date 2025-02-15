@@ -1,13 +1,13 @@
 namespace MoscowZooERP.TableFormatting;
 
 public class ConsoleTable {
-  private LinkedList<string> _columnStrokes = new LinkedList<string>();
+  protected LinkedList<string> _columnStrokes = new LinkedList<string>();
   private LinkedList<string> _columnHeaders = new LinkedList<string>();
   private LinkedList<string> _columnSpaces = new LinkedList<string>();
 
   private LinkedList<LinkedList<string>> _rows = new LinkedList<LinkedList<string>>();
   
-  static string AdjustLeft(string data, int len) {
+  public static string AdjustLeft(string data, int len) {
     if (data.Length <= len) {
       return new string(' ', len - data.Length) + data;
     }
@@ -55,6 +55,10 @@ public class ConsoleTable {
   }
 
   public string Print() {
+    if (_columnStrokes.Count == 0) {
+      return "";
+    }
+    
     string result = PrintList(_columnStrokes) + "\n" + PrintList(_columnSpaces) + "\n" + PrintList(_columnHeaders) 
                     + "\n" + PrintList(_columnSpaces) + "\n" + PrintList(_columnStrokes) + "\n";
 

@@ -8,6 +8,10 @@ using CommandProcessing;
 using ThingsHierarchy;
 using TableFormatting;
 
+/// <summary>
+/// Главный класс. Точка жизни для всех существенных объектов. Является статическим и реализует
+/// взаимодействие с пользователем.
+/// </summary>
 class ClientHandler {
   private static MoscowZoo zoo;
   
@@ -155,7 +159,10 @@ class ClientHandler {
         Console.WriteLine($"Возникли сложности с постановкой вещи. Возможно она могла быть неисправна.");
       }
     }
-    catch (ArgumentNullException exp){
+    catch (ArgumentNullException exp) {
+      Console.WriteLine(exp.Message);
+    }
+    catch (ArgumentException exp) {
       Console.WriteLine(exp.Message);
     }
   }
@@ -163,6 +170,12 @@ class ClientHandler {
   static void PrintObjects() {
     Console.WriteLine(thingsTable.Print());
   }
+  
+  /// <summary>
+  /// Метод проверяет можем ли мы выполнить команду, и если находит совпадение - выполняет
+  /// </summary>
+  /// <param name="input"> Введенный с консоли текст </param>
+  /// <returns> true - программа продолжает работать, иначе закрывается </returns>
   static bool Decide(string? input) {
     var type = Parse(input);
     
