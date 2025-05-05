@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoscowZooDDD.WebAPI", "MoscowZooDDD.WebAPI\MoscowZooDDD.WebAPI.csproj", "{8AE4DC56-71BB-4D78-B499-76CEF0F3FA86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoscowZooDDD.Entities", "MoscowZooDDD.Entities\MoscowZooDDD.Entities.csproj", "{FA2FFD3A-62A1-4AEA-8ADA-836ED02A73D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoscowZooDDD.UseCases", "MoscowZooDDD.UseCases\MoscowZooDDD.UseCases.csproj", "{B73CC23D-7AC5-4652-9608-2833096D4C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoscowZooDDD.Infrastructure", "MoscowZooDDD.Infrastructure\MoscowZooDDD.Infrastructure.csproj", "{981DAFB1-C1D0-40B2-B608-0160FE5DA1C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AE4DC56-71BB-4D78-B499-76CEF0F3FA86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AE4DC56-71BB-4D78-B499-76CEF0F3FA86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AE4DC56-71BB-4D78-B499-76CEF0F3FA86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AE4DC56-71BB-4D78-B499-76CEF0F3FA86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2FFD3A-62A1-4AEA-8ADA-836ED02A73D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2FFD3A-62A1-4AEA-8ADA-836ED02A73D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2FFD3A-62A1-4AEA-8ADA-836ED02A73D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2FFD3A-62A1-4AEA-8ADA-836ED02A73D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B73CC23D-7AC5-4652-9608-2833096D4C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B73CC23D-7AC5-4652-9608-2833096D4C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B73CC23D-7AC5-4652-9608-2833096D4C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B73CC23D-7AC5-4652-9608-2833096D4C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981DAFB1-C1D0-40B2-B608-0160FE5DA1C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981DAFB1-C1D0-40B2-B608-0160FE5DA1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981DAFB1-C1D0-40B2-B608-0160FE5DA1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981DAFB1-C1D0-40B2-B608-0160FE5DA1C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
